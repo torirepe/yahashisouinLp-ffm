@@ -11,14 +11,16 @@ var watch = require('gulp-watch');
 var changed = require('gulp-changed');
 var cache = require('gulp-cached');
 
-var destDir = 'wp/wp-content/themes/yahashi';
+var destDir = 'dest/';
 var assetsDir = 'assets/';
 
-/*gulp.task('browser-sync', function () {
-  browserSync.init({
-    proxy: "10.0.1.192/kafk/wp/"
+gulp.task('browser-sync', function () {
+  browserSync({
+    server: {
+      baseDir: destDir
+    }
   });
-});*/
+});
 gulp.task('sass', function () {
   return gulp.src(['source/' + assetsDir + 'sass/**/*.scss'])
     .pipe(plumber({
@@ -62,7 +64,7 @@ gulp.task('copysource', function () {
     .pipe(gulp.dest(destDir))
     .pipe(browserSync.stream())
 });
-gulp.task('default', [/*'browser-sync', */'copysource', 'sass', 'jsmin'], function () {
+gulp.task('default', ['browser-sync', 'copysource', 'sass', 'jsmin'], function () {
   watch(['source/**/*.+(jpg|jpeg|gif|png|html|php)'], function (event) {
     gulp.start(['copysource']);
   });

@@ -1,0 +1,702 @@
+@charset 'UTF-8';
+/* util */
+@media screen and (min-width: 426px) and (max-width: 768px)
+{
+    .sp
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px)
+{
+    .sp
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px)
+{
+    .tb
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px)
+{
+    .tb
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px)
+{
+    .pc
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px)
+{
+    .pc
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px)
+{
+    .st
+    {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 425px)
+{
+    .tp
+    {
+        display: none !important;
+    }
+}
+
+.cf
+{
+    zoom: 1;
+}
+.cf:after
+{
+    display: block;
+    clear: both; 
+
+    content: '';
+}
+
+/* /util */
+/* base */
+@media screen and (max-width: 425px)
+{
+    html
+    {
+        font-size: 2.35294vw;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px)
+{
+    html
+    {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 769px)
+{
+    html
+    {
+        font-size: 10px;
+    }
+}
+
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Original Yu Gothic', 'Yu Gothic', YuGothic, Verdana, Meiryo, 'M+ 1p', sans-serif;
+    font-size: 0;
+    line-height: 0;
+
+    position: relative;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    letter-spacing: 0;
+    word-wrap: break-word;
+
+    color: #000; 
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: 100%;
+}
+
+a
+{
+    font-size: inherit;
+
+    display: block;
+
+    cursor: pointer; 
+
+    color: inherit;
+}
+
+img
+{
+    width: 100%; 
+
+    pointer-events: none;
+}
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6,
+main p,
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6,
+article p
+{
+    font-size: 10px;
+    line-height: 1;
+}
+
+body,
+div,
+pre,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+th,
+td,
+figure,
+figcaption
+{
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea
+{
+    font-size: 100%; 
+
+    margin: 0;
+}
+
+label
+{
+    cursor: pointer;
+}
+
+table
+{
+    font-size: 100%; 
+
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th,
+td
+{
+    list-style: none;
+}
+
+fieldset,
+img
+{
+    border: 0;
+}
+
+img
+{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    vertical-align: top;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var
+{
+    font-weight: normal; 
+    font-style: normal;
+}
+
+ol,
+ul
+{
+    list-style: none;
+}
+
+caption,
+th
+{
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:after,
+q:before
+{
+    content: '';
+}
+
+a,
+input
+{
+    color: inherit; 
+    outline: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+input[type='button'],
+input[type='submit']
+{
+    padding: 0;
+
+    cursor: pointer; 
+
+    border: none;
+    background: none;
+
+    -webkit-appearance: none;
+}
+
+abbr,
+acronym
+{
+    border: 0;
+}
+
+i
+{
+    font-style: normal;
+}
+
+main,
+section,
+article,
+time
+{
+    display: block;
+}
+
+/* /base */
+/* skin */
+/* /skin */
+/* layou */
+/* /layou */
+/* unique */
+#header
+{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+    zoom: 1; 
+
+    width: 100%;
+    height: 7rem;
+    padding: 0 2rem;
+
+    background-color: #fff;
+}
+#header:after
+{
+    display: block;
+    clear: both; 
+
+    content: '';
+}
+#header h1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 344px; 
+
+    -webkit-transform: translate(-50%, -70%);
+        -ms-transform: translate(-50%, -70%);
+            transform: translate(-50%, -70%);
+}
+#header .menu
+{
+    float: left; 
+
+    margin-top: 2.4rem;
+}
+#header .menu div
+{
+    font-family: 'Prata', 'Hiragino Mincho ProN', 游明朝, 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', HGS明朝E, メイリオ, Meiryo, serif;
+    font-size: 2rem;
+    line-height: 1; 
+
+    position: relative;
+}
+#header .menu div:after
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    display: block;
+
+    width: 3rem;
+    height: 3rem;
+
+    content: '';
+    -webkit-transform: rotate(45deg) translate(20%, -100%);
+        -ms-transform: rotate(45deg) translate(20%, -100%);
+            transform: rotate(45deg) translate(20%, -100%); 
+
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+}
+#header .menu ul
+{
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+
+    width: 260px;
+    height: 100vh;
+    padding: 40px;
+
+    -webkit-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%); 
+
+    background-color: #fff;
+}
+#header .menu ul li
+{
+    font-size: 2rem;
+    line-height: 1; 
+
+    border-bottom: 1px solid #000;
+}
+#header .sns
+{
+    float: right; 
+
+    margin-top: .9rem;
+}
+#header .sns div
+{
+    font-family: 'Prata', 'Hiragino Mincho ProN', 游明朝, 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', HGS明朝E, メイリオ, Meiryo, serif;
+    font-size: 2rem;
+    line-height: 1; 
+
+    display: inline-block;
+
+    padding: .8em .8em .8em 0;
+
+    vertical-align: middle;
+
+    border-right: 1px solid #000;
+}
+#header .sns ul
+{
+    display: inline-block;
+
+    vertical-align: middle;
+}
+#header .sns ul li
+{
+    display: inline-block;
+
+    width: auto;
+    height: 2.8rem; 
+    margin-left: 2rem;
+}
+#header .sns ul li a
+{
+    width: auto;
+    height: 100%;
+}
+#header .sns ul li a img
+{
+    width: auto;
+    height: 100%;
+}
+
+#main .intro .fp-scroller
+{
+    -webkit-transform: all .2s ease !important;
+        -ms-transform: all .2s ease !important;
+            transform: all .2s ease !important;
+}
+
+#main .intro .l_inner .hero
+{
+    position: relative;
+
+    overflow: hidden; 
+
+    width: 100%;
+    height: 800px;
+}
+#main .intro .l_inner .hero h1
+{
+    position: relative;
+    z-index: 2;
+
+    width: 1000px; 
+    margin: 0 auto;
+    padding-top: 545px;
+}
+#main .intro .l_inner .hero h1 img
+{
+    width: 480px;
+}
+#main .intro .l_inner .hero #heroSlider
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+#main .intro .l_inner .hero #heroSlider .bx-wrapper,
+#main .intro .l_inner .hero #heroSlider .bx-viewport
+{
+    height: 100% !important;
+}
+#main .intro .l_inner .hero #heroSlider ul
+{
+    height: 100%;
+}
+#main .intro .l_inner .hero #heroSlider ul li
+{
+    position: relative;
+
+    height: 100% !important;
+}
+#main .intro .l_inner .hero #heroSlider ul li picture img
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 100%;
+    min-width: 1800px;
+
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+}
+
+#main .intro .l_inner .news
+{
+    background-color: #000;
+}
+#main .intro .l_inner .news .inner
+{
+    width: 1000px; 
+    margin: 0 auto;
+    padding: 28px 40px 24px;
+}
+#main .intro .l_inner .news .inner h2
+{
+    font-family: 'Prata', 'Hiragino Mincho ProN', 游明朝, 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', HGS明朝E, メイリオ, Meiryo, serif;
+    font-size: 4.7rem;
+    font-weight: normal;
+    line-height: 1;
+
+    color: #fff;
+}
+#main .intro .l_inner .news .inner ul li
+{
+    margin-top: 2rem;
+}
+#main .intro .l_inner .news .inner ul li a
+{
+    line-height: 1;
+
+    color: #fff;
+}
+#main .intro .l_inner .news .inner ul li a:hover p
+{
+    text-decoration: underline;
+}
+#main .intro .l_inner .news .inner ul li a time
+{
+    font-size: 1.1rem; 
+
+    display: inline-block;
+
+    width: 100px;
+
+    vertical-align: middle;
+
+    opacity: .5;
+}
+#main .intro .l_inner .news .inner ul li a p
+{
+    font-size: 1.4rem; 
+
+    display: inline-block;
+
+    vertical-align: middle;
+}
+#main .intro .l_inner .news .inner div
+{
+    font-size: 1.2rem;
+    line-height: 1;
+
+    margin-top: 2em;
+
+    text-decoration: underline;
+
+    color: #fff;
+}
+
+#main .intro .l_inner .concept
+{
+    position: relative;
+}
+#main .intro .l_inner .concept .inner
+{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 6rem 4rem 7rem;
+
+    background: url(../images/concept_bg-pc.png) no-repeat right 50px top 78px;
+}
+#main .intro .l_inner .concept .inner h2
+{
+    font-family: 'Prata', 'Hiragino Mincho ProN', 游明朝, 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', HGS明朝E, メイリオ, Meiryo, serif; 
+    font-size: 7rem;
+}
+#main .intro .l_inner .concept .inner h2:after
+{
+    position: absolute;
+    top: 11.7rem;
+    left: 0;
+
+    display: block;
+
+    width: 55vw;
+    height: 1px;
+
+    content: '';
+
+    background-color: #000;
+}
+#main .intro .l_inner .concept .inner h3
+{
+    font-size: 2.2rem;
+    font-weight: bold;
+
+    margin-top: 1.6em;
+
+    letter-spacing: .1em;
+}
+#main .intro .l_inner .concept .inner p
+{
+    font-size: 1.3rem;
+    line-height: 2; 
+
+    margin-top: 2rem;
+}
+
+.products
+{
+    position: relative;
+}
+.products .l_inner
+{
+    overflow: hidden; 
+
+    width: 100%;
+    height: 100%;
+}
+.products .l_inner .pic
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+.products .l_inner .pic img
+{
+    display: none;
+}
+.products .l_inner .pic.pic_01
+{
+    background: url('../images/products_pic_01-pc.jpg') no-repeat center center/cover;
+}
+.products .l_inner .pic.pic_02
+{
+    background: url('../images/products_pic_02-pc.jpg') no-repeat center center/cover;
+}
+.products .l_inner .pic.pic_03
+{
+    background: url('../images/products_pic_03-pc.jpg') no-repeat center center/cover;
+}
+.products .l_inner .pic.pic_04
+{
+    background: url('../images/products_pic_04-pc.jpg') no-repeat center center/cover;
+}
+.products .l_inner .pic.pic_05
+{
+    background: url('../images/products_pic_05-pc.jpg') no-repeat center center/cover;
+}
+.products .l_inner .pic.pic_06
+{
+    background: url('../images/products_pic_06-pc.jpg') no-repeat center center/cover;
+}
+
+/* /unique */
+/* animation */
+/* /animation */
