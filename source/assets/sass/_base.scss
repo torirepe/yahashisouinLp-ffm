@@ -1,13 +1,5 @@
 html {
-  @include mq(sp) {
-    font-size: 10 / 425 * 100 + vw;
-  }
-  @include mq(tb) {
-    font-size: 10px;
-  }
-  @include mq(pc) {
-    font-size: 10px;
-  }
+  font-size: 10px;
 }
 
 * {
